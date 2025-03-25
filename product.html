@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="pstyle.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="product">
+            <div class="product-images">
+                <img id="mainImage" src="placeholder.jpg" alt="Product Image">
+                <div class="thumbnail-container" id="thumbnails"></div>
+            </div>
+
+            <div class="product-info">
+                <h1 id="productTitle">Product Name</h1>
+                <h3 id="brandName">Brand: XYZ</h3>
+                <div class="ratings" id="productRatings">⭐ 4.5/5 (10 Reviews)</div>
+                <p class="price">
+                    <span id="discountedPrice">₹999</span>
+                    <span id="originalPrice" class="original">₹1,299</span>
+                    <span id="discountPercentage" class="discount">23% Off</span>
+                </p>
+                <p id="stockStatus" class="in-stock">✅ In Stock</p>
+
+                <button id="whatsappBtn">🛒 Order on WhatsApp</button>
+
+                <div class="product-details">
+                    <h2>Key Features</h2>
+                    <ul id="keyFeatures">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                    </ul>
+
+                    <h2>Full Description</h2>
+                    <p id="fullDescription">This is a great product...</p>
+
+                    <h2>Technical Details</h2>
+                    <table id="technicalDetails">
+                        <tr><td>Material</td><td>Plastic</td></tr>
+                        <tr><td>Color</td><td>Black</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="p.js"></script>
+</body>
+</html>
